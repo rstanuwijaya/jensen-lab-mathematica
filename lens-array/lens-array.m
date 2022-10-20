@@ -35,7 +35,7 @@ k0=2\[Pi]/\[Lambda]
 {lx,ly}={nx*p,ny*p};
 {dx,dy}={p,p};
 {dkx, dky}={(2\[Pi])/(p*nx),(2\[Pi])/(p*ny)};
-{padx,pady}= {(padRatio-1)/2 nx,(padRatio-1)/2 ny};
+{padx,pady}= {3(padRatio-1)/2 nx,3(padRatio-1)/2 ny};
 k = k0*Sin/@({
  {{-\[Theta]x, -\[Theta]y}, {0, -\[Theta]y}, {\[Theta]x, -\[Theta]y}},
  {{-\[Theta]x, 0}, {0, 0}, {\[Theta]x, 0}},
