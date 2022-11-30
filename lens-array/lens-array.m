@@ -11,7 +11,6 @@ T2=None;
 *)
 
 
-
 rotL[data_]:=RotateLeft[data, Floor@Dimensions[data][[#]]/2&/@Range[Length@Dimensions[data]]];
 (* corner at orign to center at origin *)
 rotR[data_]:=RotateRight[data, Floor@Dimensions[data][[#]]/2&/@Range[Length@Dimensions[data]]];
