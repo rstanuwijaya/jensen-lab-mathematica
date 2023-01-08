@@ -25,7 +25,7 @@ Options[plot]={plotFunction->ArrayPlot, cropRatio->1, rasterize->True};
 plot[func_, args_, OptionsPattern[]]:=
 Module[{},
 	Map[func/*(ArrayPad[#,-Floor[(1-OptionValue[cropRatio])/2*Dimensions@#]]&)/*OptionValue[plotFunction], 
-	args, {2}]//GraphicsGrid
+	args, {2}]//Grid
 	]
 
 
